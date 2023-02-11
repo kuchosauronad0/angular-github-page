@@ -6,6 +6,6 @@ RUN npm install
 RUN npm run build --prod
 
 #stage 2
-FROM nginx:alpine@sha256:659610aadb34b7967dea7686926fdcf08d588a71c5121edb094ce0e4cdbc45e6
+FROM nginx:alpine@sha256:6f94b7f4208b5d5391246c83a96246ca204f15eaf7e636cefda4e6348c8f6101
 COPY --from=node /app/dist/sample /usr/share/nginx/html
 EXPOSE 80
