@@ -1,5 +1,5 @@
 #stage 1
-FROM node:latest@sha256:14f0471d0478fbb9177d0f9e8c146dc872273dcdcfc7fea93a27ed81fc6b0e96 as node
+FROM node:latest@sha256:c29271c7f2b4788fe9b90a7506d790dc8f2ff46132e1b70e71bf0c0679c8451c as node
 WORKDIR /app
 COPY sample .
 RUN npm install
